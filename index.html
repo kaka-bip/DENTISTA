@@ -15,22 +15,23 @@
     <header>
     <div class="logo">
         <img src="assets/img/Logo.png" alt="Logo"class="logo-img">
-        <h3><a href="#">ODOMED</a></h3>
     </div>
         <nav class="navbar">
-
             <ul class="navlink">
                 <li><a href="#">Home</a></li>
+
                 <li><a href="#serviço">Serviço</a></li>
+
+                <li><a href="#local">Local</a></li>
+
                 <li><a href="#">Contato</a></li>
-                <li><a href="#">Local</a></li>
             </ul>
         </nav>
-        <button type="button" id="btn-serviço"><a href="#serviço">Serviço</a></button>
+        <button type="button" id="btn-serviço" onclick="marcar()">Serviço</button>
     </header>
 
     <main>
-        <section class="home-page" id="serviço">
+        <section class="home-page">
             <div class="home-container">
                 <div class="home-content">
                     <h3>Cuidado completo para o  sorriso de toda a família.</h3>
@@ -45,24 +46,26 @@
                     <h1>Tratamentos para o seu Sorriso</h1>
                     <p>Oferecemos tratamentos modernos e personalizados para garantir que você e sua família sorriam com saúde e confiança todos os dias.</p>
                     <div class="serviço-container">
-                    <div class="serviço">
+
+                    <div class="serviço" id="serviço">
                         <img src="assets/img/restauração.png" alt="">
                         <hr>
                         <h3>Restauração de Dentes</h3>
                         <p>Recupere a forma e a saúde dos seus dentes com materiais de alta qualidade que imitam a cor natural, devolvendo a beleza e a função da sua mastigação.</p>
                         <button type="button" onclick="marcar('Restauração')">Marcar Consulta</button>
                     </div>
+
                     <div class="serviço">
                         <img src="assets/img/aparelhos.png" alt="">
                         <hr>
                         <h3></h3>
                         <p>Recupere a forma e a saúde dos seus dentes com materiais de alta qualidade que imitam a cor natural, devolvendo a beleza e a função da sua mastigação.</p>
-                        <button type="button">Marcar Consulta</button>
+                        <button type="button" onclick="marcar(aparelho)">Marcar Consulta</button>
                     </div>
             </div>
         </section>
         <hr>
-        <section class="local-page">
+        <section class="local-page" id="local">
             <div class="local-container">
                 <h1>Venha nos Visitar</h1>
                 <p>Nosso consultório fica no coração da cidade, preparado para oferecer um atendimento moderno em um ambiente seguro e acolhedor.</p>

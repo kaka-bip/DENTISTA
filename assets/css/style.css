@@ -43,20 +43,35 @@ header{
     margin: 5px;
     align-items: center;
     text-align: center;
+    position: relative;
 }
 
 .navlink{
-    display: flex;
     gap: 40px;
     align-items: center;
     text-align: center;
+    display: flex;
+    list-style: none;
 }
 
+.navlink li a{
+    position: relative;
+    padding: 5px 0;
+}
 
-.logo{
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.navlink li a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #34A9E6;
+    transition: width 0.3s ease;
+}
+
+.navlink li a:hover::after{
+    width: 100%;
 }
 
 .logo-img{
@@ -65,11 +80,6 @@ header{
     height: 80px;
     border-radius: 50%;
     border: 2px solid #fff;
-}
-
-.img-josane{
-    width: 100px;
-    height: 200px;
 }
 
 #btn-serviço{
@@ -83,6 +93,9 @@ header{
     color: #F0F2F2;
 }
 
+#btn-serviço:hover{
+    scale: 1.05;
+}
 
 .home-page{
     background-image: url('../img/sala.jpg');
