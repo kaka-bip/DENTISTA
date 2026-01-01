@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ODOMED</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/anima.css">
     <link rel="shortcut icon" href="assets/img/Logo.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,11 +21,11 @@
             <ul class="navlink">
                 <li><a href="#">Home</a></li>
 
-                <li><a href="#serviço">Serviço</a></li>
+                <li><a href="#serviços">Serviço</a></li>
 
                 <li><a href="#local">Local</a></li>
 
-                <li><a href="#">Contato</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
         <button type="button" id="btn-serviço" onclick="marcar()">Serviço</button>
@@ -42,24 +43,40 @@
             </div>
         </section>
         <hr>
-        <section class="serviço-page">
+        <section class="serviço-page" id="serviços">
                     <h1>Tratamentos para o seu Sorriso</h1>
-                    <p>Oferecemos tratamentos modernos e personalizados para garantir que você e sua família sorriam com saúde e confiança todos os dias.</p>
+                    <p> Oferecemos tratamentos modernos e personalizados para garantir que você e sua família sorriam com saúde e confiança todos os dias.</p>
                     <div class="serviço-container">
 
-                    <div class="serviço" id="serviço">
+                    <div class="serviço" class="serviço">
                         <img src="assets/img/restauração.png" alt="">
                         <hr>
-                        <h3>Restauração de Dentes</h3>
-                        <p>Recupere a forma e a saúde dos seus dentes com materiais de alta qualidade que imitam a cor natural, devolvendo a beleza e a função da sua mastigação.</p>
+                        <h3>Aparelho Fixo Metálico</h3>
+                        <p> Aparelho que usa peças de metal para alinhar os dentes com precisão e segurança total.</p>
                         <button type="button" onclick="marcar('Restauração')">Marcar Consulta</button>
                     </div>
 
-                    <div class="serviço">
+                    <div class="serviço" class="serviço">
                         <img src="assets/img/aparelhos.png" alt="">
                         <hr>
-                        <h3></h3>
-                        <p>Recupere a forma e a saúde dos seus dentes com materiais de alta qualidade que imitam a cor natural, devolvendo a beleza e a função da sua mastigação.</p>
+                        <h3>Restauração de Dentes</h3>
+                        <p> Procedimento que reconstrói a forma e a função do dente afetado por cárie ou fratura.</p>
+                        <button type="button" onclick="marcar(aparelho)">Marcar Consulta</button>
+                    </div>
+
+                    <div class="serviço" class="serviço">
+                        <img src="assets/img/aparelhos.png" alt="">
+                        <hr>
+                        <h3>Tratamento de Cana</h3>
+                        <p> Técnica que remove a polpa infectada para salvar o dente natural e eliminar toda dor.</p>
+                        <button type="button" onclick="marcar(aparelho)">Marcar Consulta</button>
+                    </div>
+                    
+                    <div class="serviço" class="serviço">
+                        <img src="assets/img/aparelhos.png" alt="">
+                        <hr>
+                        <h3>Extrações</h3>
+                        <p> Remoção cirúrgica de dentes que não podem ser salvos ou que prejudicam a saúde bucal.</p>
                         <button type="button" onclick="marcar(aparelho)">Marcar Consulta</button>
                     </div>
             </div>
@@ -70,6 +87,74 @@
                 <h1>Venha nos Visitar</h1>
                 <p>Nosso consultório fica no coração da cidade, preparado para oferecer um atendimento moderno em um ambiente seguro e acolhedor.</p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3899.352036913112!2d-38.96695361692751!3d-12.224426314342628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7143840b7b2e9ff%3A0x62d83578a7ee8bfc!2sOdomed!5e0!3m2!1spt-BR!2sbr!4v1766107852714!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <hr>
+        <section class="counters-page">
+            <div class="counters-header">
+                <h2>Por que escolher a Odomed?</h2>
+                <p>Experiência e dedicação para cuidar do seu sorriso. Veja nossos números:</p>
+            </div>
+
+            <div class="counters-item">
+                <div class="item">
+                    <h3>+5.000</h3>
+                    <p>Pacientes atendidos</p>
+                </div>
+
+                <div class="item">
+                    <h3>+10</h3>
+                    <p>Anos de experiência</p>
+                </div>
+
+                <div class="item">
+                    <h3>100%</h3>
+                    <p>Satisfação dos clientes</p>
+                </div>
+
+                <div class="item">
+                    <h3>+1.500</h3>
+                    <p>Aparelhos instalados</p>
+                </div>
+                
+            </div>
+        </section>
+        <hr>
+        <section class="container-contato" id="#contato">
+            <div class="container-img">
+                <img src="https://i.pinimg.com/1200x/82/38/d5/8238d5ca63a38eb14fdcd811888a142f.jpg" alt="image contato">
+            </div>
+            <div class="container-input">
+
+                <div class="input-box">
+                    <label for="" id="cliente-nome">Seu nome</label>
+                    <input type="text" name="" id="" placeholder="Seu nome">
+                </div>
+
+                <div class="input-box">
+                    <label for="">Seu telefone</label>
+                    <input type="tel" name="" id="" placeholder="(75) 99999-9999">
+                </div>
+
+                <div class="input-box">
+                    <label for="" id="cliente-msg">Sua mensagem</label>
+                    <input type="text" name="" id="" placeholder="Mensagem">
+                </div>
+
+            </div>
+
+            <div class="btn-contato">
+                <button type="btn-enviar" onclick="enviar()">Enviar</button>
+            </divbutton>
+
+            <!--Alerta-->
+            <div id="status-overlay" class="overlay">
+                <div class="status-card">
+                    <div id="icon-container"></div>
+                    <h3 id="status-titulo"></h3>
+                    <p id="status-msg"></p>
+                    <button onclick="fecharStatus()">Fechar</button>
+                </div>
             </div>
         </section>
     </main>

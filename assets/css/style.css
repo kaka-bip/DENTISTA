@@ -3,8 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-    transition: 0.5s;
+    transition: 0.6s;
 }
+
+
 
 hr{
     height: 2px;
@@ -63,7 +65,7 @@ header{
     content: '';
     position: absolute;
     left: 0;
-    bottom: -5px;
+    bottom: 0;
     width: 0;
     height: 2px;
     background-color: #34A9E6;
@@ -140,7 +142,7 @@ button{
 }
 
 .serviço-page{
-    background-color: #34A9E6;
+    background:linear-gradient(135deg, #34A9E6, #a7ecff, #00ffd0);
     text-align: center;
     align-items: center;    
 
@@ -155,7 +157,17 @@ h1,p{
 
 }
 
+.serviço p{
+    margin: 3px;
+    padding: 3px;
+    text-align: justify;
+    font-weight: bold;
+    font-size: 15px;
+}
+
 .serviço-container{
+    margin: 10px;
+    padding: 10px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -220,4 +232,119 @@ iframe{
     padding-top: 5px;
     border-radius: 30px;
 }
+}
+
+.counters-page{
+    background: linear-gradient(165deg, #00ffd0,#F0F2F2,#c1ffd4);
+    padding: 80px 20px;
+    text-align: center;
+    color: #000;
+}
+
+.counters-header{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.counters-header p{
+    font-size: 18px;
+    opacity: 0.8;
+    margin-bottom: 50px;
+}
+
+.counters-item{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.counters-item{
+    flex: 1;
+    min-width: 200px;
+}
+
+.counters-item h3{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px
+}
+
+.counters-item p{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.container-contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Lado Esquerdo: Imagem */
+.container-img img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Lado Direito: Inputs */
+.container-input {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-box label {
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
+}
+
+.input-box input {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background: #fdfdfd;
+    transition: 0.3s;
+}
+
+.input-box input:focus {
+    border-color: #34A9E6;
+    outline: none;
+    box-shadow: 0 0 8px rgba(52, 169, 230, 0.2);
+}
+
+/* Botão Enviar */
+.btn-contato button {
+    margin-top: 10px;
+    padding: 15px 40px;
+    background-color: #34A9E6;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.btn-contato button:hover {
+    background-color: #1a7bb3;
+    transform: translateY(-2px);
 }
